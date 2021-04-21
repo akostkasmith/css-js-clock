@@ -7,21 +7,21 @@ const hourHand = document.querySelector('.hour-hand');
 const clockText = document.querySelector('.clock-text');
 
 
-setInterval(function() {
+setInterval(() => {
     
     const now = new Date();
 
     const time = {
         getSecondRotate() {
-            const rotateVal = this.second * 6;
+            const rotateVal = (this.second / 60) * 360;
             return Math.round(rotateVal);
         },
         getMinuteRotate() {
-            const rotateVal = this.minute * 6;
+            const rotateVal = (this.minute / 60) * 360;
             return Math.round(rotateVal);
         },
         getHourRotate() {
-            const rotateVal = this.hour * 30;
+            const rotateVal = (this.hour / 12) * 360;
             return Math.round(rotateVal);
         },
         second: now.getSeconds(),
