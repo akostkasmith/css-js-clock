@@ -1,0 +1,8 @@
+* { box-sizing: border-box;}
+body { overflow: hidden; padding: 0px; margin: 0px;}
+.clock { width: 100vw; height: 100vh; display: flex; justify-content: center; align-content: center; align-items: center; background-image: url(../pexels-suzy-hazelwood-1629236.jpg);background-size: cover; flex-wrap: wrap;}
+.clock-face { width: 205px; height: 205px; border-radius: 2px; border: 1px solid #fff; border-radius: 50%; position: relative; background-color: rgba(255,255,255,0.25); box-shadow: 0 0 10px rgba(0,0,0,0.25)}
+.clock-text { width: 100%; text-align: center; margin-top: 20px; font-size: 50px; color: #fff; font-family: 'Antonio'}
+.hand { width: 3px; background-color: #fff; height: 100px; left: 100px; position: absolute; transform-origin: bottom center; transition: all 250ms ease; border-radius: 3px;}
+.hour-hand { width: 5px; }
+.minute-hand { width: 2.5px;}
